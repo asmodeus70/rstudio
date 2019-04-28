@@ -1,0 +1,7 @@
+- name: Create rstudio image
+  hosts: localhost
+  tasks:
+    - name: Build image
+      docker_image:
+        path: ./docker
+        name: rstudio

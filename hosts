@@ -1,0 +1,2 @@
+[all]
+ansible_connection=docker

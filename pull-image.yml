@@ -1,0 +1,6 @@
+- name: Pull rstudio image
+  hosts: localhost
+  tasks:
+    - name: Pull image
+      docker_image:
+        name: rocker/rstudio
