@@ -17,4 +17,9 @@ pipeline {
       }
     }
   }
+    stage('Test RStudio is online') {
+    steps {
+      sh 'ansible-playbook test-rstudio.yml'
+    }
+  }
 }
