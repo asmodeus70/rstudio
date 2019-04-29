@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  gather_facts: no
+
+  tasks:
+   - name: Check that RStudio is running 
+     uri:
+       url: http://localhost:8787
+       return_content: yes
+     register: this
+     failed_when: "'RStudio' not in this.content"

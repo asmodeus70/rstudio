@@ -7,8 +7,7 @@
     - name: rstudio container
       docker_container:
         name: rstudio-server
-        image: rstudio:latest
-        #        pull: yes
+        image: studio
         state: started
         published_ports:
           - "8787:8787"
